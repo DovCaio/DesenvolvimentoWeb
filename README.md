@@ -1,4 +1,4 @@
 # DesenvolvimentoWeb
 Estudando Desenvolvimento Web
 
-1. [JavaScript](java_script)
+1. [JavaScript](1_java_script)
