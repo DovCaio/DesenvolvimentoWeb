@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!--O Doctype é a menor cadeia de caracteres que conta como um doctype válido-->
+<html> 
+    <!--
+
+        A tag html envolve o conteúdo da página inteira, é conhecido como elemento raiz.
+
+    -->
+
+    <head>
+
+        <!--
+
+            A head é um conteiner para todo conteúdo da página html que não é visível para visitantes do site.
+            como palavras-chave e a descrisão da página que é desejada que apareça nos resultados da busca,
+            também o css, porém é melhor que seja somente referenciado o arquivo onde o css vai estar,
+            ao invés de colocar o css na propria pagina
+
+        -->
+
+        <meta charset="utf-8" /> <!--Defina o tipo de codificação dos caracteres da página  -->
+
+        <title>Meu site</title> <!--Título da página, que aparecerá na guia do navegadorna qual 
+            a pagina esta sendo carregada-->
+
+        <meta name="author" content="Caio Jhonatan"> <!--Especifica o autor da página-->
+
+        <meta name="description" content="A Área de Aprendizagem do MDN tem como objetivo
+        proporcionar iniciantes em Web com tudo o que eles precisam saber
+        para começar a desenvolver sites e aplicativos."> <!--Especifica a descrição da página. Usado para
+             as ferramentas de pesquisa acharem o site-->
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--Favorite icon, é o icone do site-->
+
+
+        <!--
+
+            Podemos ter diversos icones que vão aparecer de acordo com o tamanho da tela do cliente, ex:
+
+             iPad de terceira geração com tela retina de alta resolução: 
+                <link
+                rel="apple-touch-icon-precomposed"
+                sizes="144x144"
+                href="https://developer.mozilla.org/static/img/favicon144.png" />
+                iPhone com tela retina de alta resolução: 
+                <link
+                rel="apple-touch-icon-precomposed"
+                sizes="114x114"
+                href="https://developer.mozilla.org/static/img/favicon114.png" />
+                iPad de primeira e segunda geração: 
+                <link
+                rel="apple-touch-icon-precomposed"
+                sizes="72x72"
+                href="https://developer.mozilla.org/static/img/favicon72.png" />
+                iPhone não-Retina, iPod Touch e dispositivos Android 2.1+:
+                <link
+                rel="apple-touch-icon-precomposed"
+                href="https://developer.mozilla.org/static/img/favicon57.png" />
+                favicon básico 
+                <link
+                rel="shortcut icon"
+                href="https://developer.mozilla.org/static/img/favicon32.png" />
+            
+
+        -->
+
+        <!--
+
+            Para aplicarmos css na página usando a tag link com o caminho do css
+
+        -->
+
+        <link rel="stylesheet" href="LINKDOCSS.css">
+
+        <html lang="pt-BR"></html> <!--Idioma principal do site-->
+
+    </head>
+
+
+    
+    <body>
+        
+        <!--
+
+            O elemento body contém o conteúdo que sera mostrado aos usuários quando ele visitarem ela,
+            com texto, imagens, vídeos, jogos, faxas de audio reproduziveis
+
+        -->
+
+
+
+    
+        <script src="meuScript.js"></script>
+    </body>
+
+</html>
