@@ -1,0 +1,108 @@
+<h1>Práticas Recomendadas</h1>
+
+<h2>Use palavras-chave claras</h2>
+
+<p>Precisamos tornar os links acessíveis a todos os leitores, independentemente do contexto atula
+    e de quais ferramentas eles preferem.
+</p>
+
+<ul>
+
+    <li>Os usuários de leitores de texto gostam de pular de link em link na página
+         e ler links fora de contexto</li>
+    <li>Os motores de busca usam o texto do link para indexar arquivos de destino,
+         por isso é uma boa idéia incluir palavras-chave no texto do link para descrever
+          efetivamente o que está sendo vinculado.</li>
+    <li>Os usuários normalmente deslizam sobre a página em vez de ler cada palavra, e 
+        são atraídos para recursos de página que se destacam, como links. Eles acharão
+         os textos descritivos de links úteis.</li>
+
+</ul>
+
+<p>Exemplo:</p>
+
+<p>Texto de link <strong>correto</strong>:</p>
+<p><a href="https://firefox.com/">Baixe o firefox</a></p>
+<p>Texto de link <strong>incorreto</strong>:</p>
+<p><a href="https://firefox.com/">Clique aqui</a> para baixar o firefox</p>
+
+<h3>Outras dicas</h3>
+
+<ul>
+
+    <li>Não repita o URL como parte do texto do link — Os URLs parecem feios e até são
+         mais feios quando um leitor de tela os lê letra por letra.</li>
+    <li>Não diga "link" ou "links para" no texto do link — é apenas ruído. Os leitores 
+        de tela já dizem às pessoas que existe um link. Os usuários visuais também 
+        sabem que existe um link, porque eles geralmente são de cor diferente e 
+        sublinhados (esta convenção geralmente não deve ser quebrada, pois os usuários 
+        estão muito acostumados a isso).</li>
+    <li>Mantenha seu rótulo de link o mais curto possível — links longos irritam
+         especialmente os usuários de leitores de tela, que têm que ouvir o texto 
+         inteiro lido.</li>
+
+    <li>Minimize instâncias em que o mesmo texto esteja ligado a diferentes lugares.
+         Isso pode causar problemas para os usuários do leitor de tela, que muitas
+          vezes mostrará uma lista dos links fora do contexto — vários links todos
+           rotulados como "clique aqui", "clique aqui", "clique aqui"... seria confuso.</li>
+
+</ul>
+
+
+<h2>Quando vincular recursos que não sejam html deixar os indicadores claros</h2>
+
+<p>Ao vincular a um arquivo que vai ser baixado (Como PDF ou WORD) ou trasmitir (
+    Como vídeo ou audio) ou abrir uma janela que necessite do flash, devemos adicionar
+    uma redação para reduzir qualquer confusão. Ex:
+</p>
+
+<ul>
+
+    <li>Se você estiver em uma conexão de baixa banda larga, clicar em um link e, em seguida, 
+        um download de muitos megabytes começa inesperadamente.</li>
+    <li>Se você não tiver instalado o Flash Player, clicar em um link e, de repente, ser 
+        levado para uma página que requer Flash Player.</li>
+
+</ul>
+
+<p>Por Exemplo:</p>
+
+<p>
+
+    <a href="http://www.example.com/large-report.pdf">
+        Baixe o relatório de vendas (PDF, 10MB).
+    </a>
+
+</p>
+
+<p>
+
+    <a href="http://www.example.com/video-stream/">
+
+        Assista ao vídeo (O fluxo abre em separado, qualidade HD).
+
+    </a>
+
+</p>
+
+<p>
+
+    <a href="http://www.example.com/car-game">
+
+        Jogue o jogo de carro (requer Flash Player).
+
+    </a>
+
+</p>
+
+<h2>Use o atributo de Download ao vincular a um Download</h2>
+
+<p>Quando estamos apontando para um arquivo que deve ser baixado ao invés de aberto
+    é melhor usarmos o atributo dowload
+</p>
+
+<a href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US" download="firefox-39-installer.exe">
+
+    Faça o download do firefox 39 para windows
+
+</a>
