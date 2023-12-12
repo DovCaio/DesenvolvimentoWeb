@@ -1,0 +1,48 @@
+<h1>Representado código de computador</h1>
+
+
+
+
+<dl>
+
+    <dt>Tag code</dt>
+    <dd>Serve para marcar partes genéricas do código</dd>
+    <dt>Tag pre</dt>
+    <dd>Para reter espaço em branco, quando colcamos muitos espaços em branco o navegador so rendeiza
+        apenas o primeiro espaço, quando escrevemos código precisamos organizar ele, portanto, quando
+        vamos usar os espaços para organizar o código usamos essa tag para que todos os espaços sejam
+        renderizados.
+    </dd>
+    <dt>Tag var</dt>
+    <dd>Especificar o nome de variáveis</dd>
+    <dt>kbd</dt>
+    <dd>Marcar a entrada do teclado (e outros tipos) inserida no computador</dd>
+    <dt>samp</dt>
+    <dd>Marcar a saida de um programa de computador.</dd>
+
+
+</dl>
+
+
+
+<pre><code>var para = document.querySelector('p');
+
+    para.onclick = function() {
+      alert('Owww, stop poking me!');
+    }</code></pre>
+    
+    <p>
+      You shouldn't use presentational elements like <code>&lt;font&gt;</code> and
+      <code>&lt;center&gt;</code>.
+    </p>
+    
+    <p>
+      In the above JavaScript example, <var>para</var> represents a paragraph
+      element.
+    </p>
+    
+    <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+    
+    <pre>$ <kbd>ping mozilla.org</kbd>
+    <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+    64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>

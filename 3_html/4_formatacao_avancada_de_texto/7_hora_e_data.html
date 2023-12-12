@@ -1,0 +1,35 @@
+<h1>Marcando hora  e data</h1>
+
+<p>
+    Existem muitas maneira de represnetar datas e horarios, também em diferentes países temos diversas
+    diferenças de como isso é feito, ainda assim temos formas universais as quais podemos represetar-los
+    quando usarmos isso usamos a tag time e modificamos o atributo datetime para essa forma universal
+</p>
+
+
+<time datetime="2023-12-12">20 de janeiro 2023</time>
+
+
+
+<!--
+    Ainda temos diversas formas de representar datas:
+-->
+
+<!-- Data simples padrão -->
+<time datetime="2016-01-20">20 January 2016</time>
+<!-- Apenas ano e mês -->
+<time datetime="2016-01">January 2016</time>
+<!-- Just month and day -->
+<time datetime="01-20">20 January</time>
+<!-- Apenas tempo, horas e minutos -->
+<time datetime="19:30">19:30</time>
+<!-- Você pode fazer segundos e milissegundos também! -->
+<time datetime="19:30:01.856">19:30:01.856</time>
+<!-- Data e hora -->
+<time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+<!-- Data e hora com compensação de fuso horário -->
+<time datetime="2016-01-20T19:30+01:00"
+  >7.30pm, 20 January 2016 is 8.30pm in France</time
+>
+<!-- Chamando um número de semana específico -->
+<time datetime="2016-W04">The fourth week of 2016</time>
