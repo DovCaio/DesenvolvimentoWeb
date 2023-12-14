@@ -1,0 +1,36 @@
+<h1>Elementos de layout não semânticos</h1>
+
+<p>
+    Temos situações que não conseguimos encontra um elemento semântico para determinado conteúdo
+    ou elementos. Quando isso acontece é interessante agrupar esses elementos para afetá-los
+    com uma única entidade com algum CSS ou JS. Para casos como esse HTML oferece as tags span, que é
+    inline e div que é inblock, devemos usa-los sempre atribuindo uma classe a eles atribuindo algsum
+    tipo de rótulo.
+</p>
+
+<p>Exemplo span:</p>
+<p>
+    O rei voltou bêbado para o quarto às 01:00, a cerveja não fez nada para
+    ajudá-lo enquanto ele cambaleando pela porta
+    <span class="nota-do-editor"
+      >[Nota do editor: Neste ponto da peça, as luzes devem estar baixas]</span
+    >.
+  </p>
+
+<p>Exemplo div:</p>
+
+<div class="carrinho-de-compras">
+    <h2>Carrinho de compras</h2>
+    <ul>
+      <li>
+        <p>
+          <a href=""><strong>Brincos de prata</strong></a
+          >: $99.95.
+        </p>
+        <img src="../products/3333-0985/thumb.png" alt="Brincos de prata" />
+      </li>
+      <li>...</li>
+    </ul>
+    <p>Preço total: $237.89</p>
+  </div>
+  

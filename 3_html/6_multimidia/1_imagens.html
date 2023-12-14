@@ -1,0 +1,168 @@
+<h1>Inserindo imagens no HTML</h1>
+
+<p>
+    para tal basta usarmos a tag img, e dentro do atributo src colocarmos o diretório, seja ele relativo
+    ou absoluto
+</p>
+
+<img src="dinosauro.jpe" alt="Imagen de um dinossauro">
+
+<img src="https://www.example.com/images/dinossaouro.jpe" alt="">
+
+<p>
+    Aviso: A maioria das imagens tem direitos autorais. Não exiba uma imagem em sua página da web,
+     a menos que:
+
+    1) você é o dono da imagem 2) você recebeu permissão explícita e por escrito do proprietário da imagem, ou 3)
+     você tem ampla prova de que a imagem é, de fato, de domínio público.
+     
+    </p>
+<p>
+    Violações de direitos autorais são ilegais e antiéticas. Além disso, nunca aponte seu atributo src para uma
+      imagem hospedada no site de outra pessoa à qual você não tem permissão para vincular. Isso é chamado
+       de "hotlinking". Mais uma vez, roubar a largura de banda de alguém é ilegal. Ele também torna a
+        página mais lenta, deixando você sem controle sobre se a imagem é removida ou substituída por 
+        algo embaraçoso.
+</p>
+
+
+
+<h2>Texto alternativo</h2>
+
+<p>
+    É um atributo de img, chamado de alt, ele contem o texto que vai aparecer caso a imagen não seja
+    rederizadar por algum motivo.
+</p>
+
+<p>Motivos esses que podem ser:</p>
+
+<ul>
+
+    <li>O usuário é deficiente visual e usa um leitor de tela para ler a web para eles. De 
+        fato, ter o texto alternativo disponível para descrever imagens é útil para a maioria
+         dos usuários.
+    </li>
+    <li>
+        Como descrito acima, você pode ter digitado o nome do arquivo ou caminho errado.
+    </li>
+    <li>
+        O navegador não suporta o tipo de imagem. Algumas pessoas ainda usam navegadores
+         somente de texto, como Lynx, que alternativamente exibe o texto alternativo das imagens.
+    </li>
+    <li>
+        Você pode fornecer texto para os mecanismos de pesquisa utilizarem. Por exemplo, 
+        os mecanismos de pesquisa podem corresponder o texto alternativo às consultas de pesquisa.
+    </li>
+    <li>
+        Os usuários desativaram as imagens para reduzir o volume e as distrações de transferência
+         de dados. Isso é especialmente comum em telefones celulares e em países onde a largura de
+          banda é limitada e cara.
+    </li>
+
+</ul>
+
+<p>
+    O que realmente devemos escrever dentro do alt? Depende do por que a imagen está lá em primeiro lugar.
+    O que perde se sua imagen não aparecer:
+</p>
+
+<ul>
+    <li>
+        <strong>Decoração.</strong> Se a imagem é apenas decoração adicionar um espaço em branco no alt.
+        alt="".
+    </li>
+    <li>
+        <strong>Conteúdo.</strong> Caso a imagen tenha um sentido no conteúdo e o que tem nela não está
+        bem explicado no conteúdo principal, escrevemos um breve texto no alt, do contrário deixamos
+        em branco. 
+    </li>
+    <li>
+        <strong>Links.</strong> Podemos transforma uma imagem em um link caso venhamos a colcar ela dentro
+        de uma tag a, nesse caso podemos escrever o link tanto no alt da tag img, quanto no href da tag a.
+    </li>
+    <li>
+        <strong>Texto.</strong> Devemos buscar ao máximo não colocar textos em imagens, porém caso
+        não exista outra forma, fornecemos o mesmo texto no alt.
+    </li>
+</ul>
+
+<h2>Largura e altura</h2>
+
+<p>
+    Podemos usar os atributos width e height, para largura e altura respectivamente, isso é interessante,
+    uma vez que, enquanto a imagem não é carregada, caso essess atributos tenham valores, o navegador
+    define uma area com essas dimensões.
+</p>
+
+<img
+  src="images/dinosaur.jpg"
+  alt="A cabeça e o tronco de um esqueleto de dinossauro;
+          tem uma cabeça grande com dentes longos e afiados"
+  width="400"
+  height="341" />
+
+<p>
+    No entanto devemos colocar as mesmas dimensões originais da imagem, caso contrário ela ficará granulada,
+    ou muito pequenas, despediçando larguara de banda, por isso devemos usar um editor de imagens antes.
+</p>
+
+
+
+<h2>Titulos</h2>
+
+<p>
+    Img também tem uma atributo title, que nos dar mais informações de suporte.
+</p>
+
+<img
+  src="images/dinosaur.jpg"
+  alt="A cabeça e o tronco de um esqueleto de dinossauro;
+          tem uma cabeça grande com dentes longos e afiados"
+  width="400"
+  height="341"
+  title="Um T-Rex em exibição no Museu da Universidade de Manchester" />
+
+
+<h2>Anotar imagens com figuras e legendas de figuras</h2>
+
+<p>
+    Podemos querer criar uma legenda em uma imagem e para isso podemos criar uma div e dentro dela
+    cooloca uma imagem e legendas, entretanto isso não funciona para que esta acessando por mecanismos
+    de leitura. Para tal usamos a tag figure, a qual podemo fazer algom como foi apresentado, porém dentro dela
+    podemos usar a  tag figcaption, que serve justamente de legenda.
+</p>
+
+<figure >
+
+    <img src="images/dinosaur.jpg" alt="The head and torso of a dinosaur skeleton;
+    it has a large head with long sharp teeth"
+width="400"
+height="341">
+
+    <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
+
+</figure>
+
+<p>
+    Nesse caso a alt não deve conter o mesmo conteúdo de figcaption, por que quando a imagem não
+    é carregada os dois vão aparecer.
+</p>
+
+<p>Figuras não necessariamente devem ser imagens, podem ser audios, vídeos, equações, tabelas e por ai vai</p>
+
+
+<h2>Imagens de fundo CSS</h2>
+
+<p>Podemo incorporar imagens em páginas web, inserido isso no css, por exemplo:</p>
+
+<pre>
+
+    <code>
+
+        p {
+            background-image: url("images/dinosaur.jpg");
+        }
+
+    </code>
+
+</pre>

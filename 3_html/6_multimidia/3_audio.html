@@ -1,0 +1,57 @@
+<h1>Audio</h1>
+
+<p>
+    O elemento audio funciona exatamente como o elemento vídeo, porém não possui largura nem altura e
+    não também o poster
+</p>
+
+
+
+<audio controls>
+    <source src="viper.mp3" type="audio/mp3" />
+    <source src="viper.ogg" type="audio/ogg" />
+    <p>
+      Your browser doesn't support HTML5 audio. Here is a
+      <a href="viper.mp3">link to the audio</a> instead.
+    </p>
+  </audio>
+
+
+<h2>Exibindo trilhas de texto em vídeo</h2>
+
+<p>
+    Muitas vezes as pessoas não podem, não conseguem ou não querem escutar um audio, pode ser um vídeo também
+    no html5 temos numa solução para isso que são as legendas, as quais podemos inserir tanto em audios
+    quanto em vídeos, usando o mesmo elemento dentro de video ou audio.
+</p>
+
+<p>
+    Para tal usamos a tag track que tem três atributos principais: kind( que pode ser: subtitles,
+    captions ou descriptions) src,
+    caminho do arquivo vtt e srclang, lingua da lengenda.
+</p>
+
+
+<video controls>
+    <source src="example.mp4" type="video/mp4" />
+    <source src="example.webm" type="video/webm" />
+    <track kind="subtitles" src="subtitles_en.vtt" srclang="en" />
+  </video>
+
+<p>Um exemplo de um arquivo vtt:</p>
+
+<pre>
+    <code>
+        WEBVTT
+
+1
+00:00:22.230 --> 00:00:24.606
+This is the first subtitle.
+
+2
+00:00:30.739 --> 00:00:34.074
+This is the second.
+
+  ...
+    </code>
+</pre>

@@ -1,0 +1,69 @@
+<h1>Conteúdo de vídeo e áudio</h1>
+
+<h1>Elemento video</h1>
+<p>Permite encorporar um vídeo com muita facilidade.</p>
+
+<video src="rabbit320.webm">
+
+    <!-- Isso sera mostrado caso o não seja possível de reproduzir. -->
+    <p>Seu navegador não suporta vídeos HTML5. Aqui esta <a href="rabbit320.webm">
+        o link do video
+    </a>.</p>
+    
+
+</video>
+
+<p>
+    Da mesma maneira que temos o src em imagens temos em video e funciona da mesma maneira, ainda
+    temos um atributo chamado control que controla o estado do vídeo, como pausa, play entre outras,
+    e com isso podemos criar nossa própria api
+</p>
+
+<h2>Usando vários formatos para melhorar a compatibilidade</h2>
+
+<p>
+    As vezes o nevegador não tem compatibilidade com determinado tipo de vídeo, seja por ser uma versão
+    antiga ou por outro motivo, temos algumas problemas em escolher qual tipo de arquivo, uma vez que
+    temos muitas coisas para levar em consideração, e com essas coisas a se considerar o melhor é ter
+    dois tipos de vídeo: mp4 e webm. Tendo esses dois garantimos que o vídeo vai ter compatibilidade
+    com a grande maioria dos navegadores, além de ter grande compatibiliadade com navegadores de celulares.
+
+</p>
+
+<video controls>
+    <source src="rabbit320.mp4" type="video/mp4">
+    <source src="rabbit320.webm" type="video/webm" />
+
+    <p>Seu navegador não suporta vídeos HTML5. Aqui esta <a href="rabbit320.webm">
+        o link do video
+    </a>.</p>
+</video>
+
+<p>
+    É importante usarmos o atributo type, por que assim o navegador sabera o MIME type que redenderizam
+    cada tipo de arquivo, e com o atributo type atribuido o valor certo o navegador sabera exatamente qual usar
+    assim não perdendo tempo procurando qual.
+</p>
+
+
+<h2>Outros atributos</h2>
+
+<video 
+    controls
+    width="1920"
+    height="1080"
+    autoplay
+    loop
+    muted
+    poster="imagens/luca-micheli-ruWkmt3nU58-unsplash.jpg">
+
+    <source src="videos/142300 (1080p).mp4">
+</video>
+
+<p>
+    Intuitivamente, o width é a largura, o height é a largura, o autoplay faz o vídeo ser iniciado
+    quando a página é carregada, o loop significa que o vídeo vai recomeçar quando terminar, o muted
+    é para o vídeo iniciar mutado e o poster é a tumbnail do vídeo.
+</p>
+
+

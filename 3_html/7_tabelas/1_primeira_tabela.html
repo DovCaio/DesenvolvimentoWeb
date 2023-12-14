@@ -1,0 +1,99 @@
+
+
+<table>
+    <!--As células são organizadas na mesma linha ao invés de ficar-->
+    <td>Oi, eu sou sua primeira célula</td>
+    <td>Oi, eu sou sua segunda célula</td>
+    <td>Oi, eu sou sua terceira célula</td>
+    <td>Oi, eu sou sua quarta célula</td>
+
+</table>
+
+<!--
+    Para que as células não cresçam a ponto de ocupar uma segunda linha, usamos uma linha de tabela
+    chamada de tr
+-->
+<table>
+    <tr>
+        <td>Oi, eu sou sua primeira célula</td>
+        <td>Oi, eu sou sua segunda célula</td>
+        <td>Oi, eu sou sua terceira célula</td>
+        <td>Oi, eu sou sua quarta célula</td>
+    </tr>
+</table>
+
+<!--Cada linha da tabela deve estar contida dentro do elemento tr-->
+
+
+
+<h2>Adicionando cabeçalho com o elemento th</h2>
+
+<table>
+
+    <tr>
+        <th>&nbsp;</th>
+        <th>Knocky</td>
+        <th>Flor</td>
+        <th>Ella</td>
+        <th>Juan</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>16</td>
+        <td>9</td>
+        <td>10</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <th>Owner</th>
+        <td>Mother-in-law</td>
+        <td>Me</td>
+        <td>Me</td>
+        <td>Sister-in-law</td>
+    </tr>
+    <tr>
+        <th>Eating Habits</th>
+        <td>Eats everyone's leftovers</td>
+        <td>Nibbles at food</td>
+        <td>Hearty eater</td>
+        <td>Will eat till he explodes</td>
+    </tr>
+</table>
+
+
+
+
+<h2>Permitir que as células se estendam por mútiplas linhas ou colunas</h2>
+
+<p>
+    Para premitir que uma célula se expanda temos dois atributos colspan e rowspan, um faz com que
+    a célula se expanda por colunas e o outro por linhas respectivamente.
+
+</p>
+
+
+<table>
+    <tr>
+      <th colspan="2">Animals</th>
+    </tr>
+    <tr>
+      <th colspan="2">Hippopotamus</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Horse</th>
+      <td>Mare</td>
+    </tr>
+    <tr>
+      <td>Stallion</td>
+    </tr>
+    <tr>
+      <th colspan="2">Crocodile</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Chicken</th>
+      <td>Hen</td>
+    </tr>
+    <tr>
+      <td>Rooster</td>
+    </tr>
+  </table>
