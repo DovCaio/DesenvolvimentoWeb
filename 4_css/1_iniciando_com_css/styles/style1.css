@@ -1,0 +1,117 @@
+h1{/*Modifica todos os elemento h1*/
+
+    color: red;
+
+}
+
+p, li{ /*É possível modificar vários elemento dessa forma.*/
+
+    color: green;
+
+}
+
+
+/*Alterando o comportamento padrão do navegador.*/
+
+li{
+    /*
+        Altera o caracter que vem antes do texto do elemento li. Podemos atribuir valores com disc, circle,
+        squere,  decimal, georcian, trad-chinese-informal e kannada. Também podemos colocar carcteres especias
+        se tivermos o código dele, ou também carcteres normais como -.
+    */
+    list-style-type: "\1F44D"; 
+
+}
+
+
+
+/*
+    Podemos adiciona classes a elementos e assim modificar somente os elementos que pertencem a essa classe
+*/
+
+.especial{
+
+    color:yellow;
+    font-weight: bold;
+
+}
+
+/*
+    Podemos alter somente uma tag com determianda classe.
+*/
+
+
+li.especial{ /*Essa sintaxe significa "pegue qualquer elemento li que tenha uma classe special".*/
+
+    color:blue;
+
+}
+
+
+/*
+    Estilizando coisas baseadas em sua localização no documento, por exemplo, quando queremos estilizar
+    um em dentro de um li
+*/
+
+
+li em{
+
+    color:rebeccapurple;
+
+}
+
+
+/*Quando queremos estilizar um paragrafo que vem diretamente depois de um h1*/
+
+h1 + p{
+
+    font-size: 200%;
+
+}
+
+/*
+    Estilizando coisas baseadas no estado. Normalmente isso é usado em links
+*/
+
+a:link {
+
+    color: pink;
+
+}
+
+a:visited { /*Se já tiver sido visitado*/
+
+        color: green;
+
+}
+
+
+a:hover { /*Quando o mause passa por cima*/
+
+    text-decoration: none;
+
+}
+
+/*
+    Combinando seletores e combinadores, podemos combinar vários seletores e combinadores
+*/
+
+
+/* Seleciona qualquer <span> que esteja dentro de um <p>, que esta dentro de um <article>  */
+article p span { /* ... */ }
+
+/* Seleciona qualquer <p> que vem diretamente depois de  <ul>, o que vem diretamente de um <h1>  */
+h1 + ul + p { /* ... */ }
+
+/*Também podemos combinar multiplos tipos juntos*/
+
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }
+
+/*
+    Isso estilizará qualquer elemento com classe especial, a qual esta dentro de um paragrafo
+    que vem logo após um h1 que por sua vez esta dentro de um body.
+*/
