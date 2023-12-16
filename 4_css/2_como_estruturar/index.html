@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como css é estruturado</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        h1{
+            color:red;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        p{
+
+            color: red;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Como Css é estruturado</h1>
+
+    <h2>Folha de estilo externa</h2>
+
+    <p>
+        E quando usamos o link dentro do elemento head, e dentro do href colocamos o diretório do Css
+        esse css é o css externo.
+    </p>
+
+
+    <h2>Folha de estilo interna</h2>
+
+    <p>
+        E quando usamos o elemento style dentro do elemento head, assim colocando todo conteúdo Css
+        dentro do mesmo arquivo do html.
+    </p>
+
+    <p>
+        Isso pode ser útil em algumas circunstâncias
+    </p>
+
+    <h2>Inline</h2>
+
+    <p style="color:blue;background-color: brown;">É quando usamos o css diretamente no elemento </p>
+
+
+    <h2>Seletores</h2>
+
+    <p>
+        Um seletor é o modo o qual nós apontamos para alguma coisa.
+    </p>
+
+    <p>
+        Cada regra CSS começa com um seletor ou uma lista de seletores para informar ao navegador
+        em qual elemento ou elementos as regras devem ser aplicadas.
+    </p>
+
+    <p>Exemplos:</p>
+    
+    <pre>
+        <code>
+h1
+a:link
+.manythings
+#onething
+*
+.box p
+.box p:first-child
+h1, h2, .intro
+        </code>
+    </pre>
+
+    <h2>Especificidade</h2>
+
+    <p>
+        A momentos em que dois seletores selecionam o mesmo elemento.
+    </p>
+
+    <pre>
+        <code>
+            .special {
+                color: red;
+              }
+              
+              p {
+                color: blue;
+              }
+        </code>
+    </pre>
+
+    <p>
+        Nesse caso quem vai vencer e acabar sendo renderizada é a da classe, porém caso tenhamos dois
+        seletores que tem a mesma priridade, como dois seletores p, o que aparecer por último é o que
+        vai se renderizado.
+    </p>
+
+
+    <h2>Funções</h2>
+
+    <p>Temos como atribuir um valor a uma propriedade css usando calc, ex: calc(90% - 30px).</p>
+    <p style="transform: rotate(0.8turn);">A propriedade trasform pode receber a função rotate()</p>
+    <p>Temos isso também em background-image, color e por ai vai.</p>
+
+    <h2>@rules</h2>
+
+    <p>Serve para dizes ao CSS como se comportar, por exemplo, podemos importar outro css:</p>
+    <p>@import "style2.css"</p>
+
+    <p>
+        @media nos permite aplicar css somente se determinada condição for atendida, como por exemplo
+        a resolução da tela ser de um determinado tamanho.
+    </p>
+
+
+    <pre>
+        <code>
+            body{
+
+                background-color: pink;
+
+            }
+
+            @media (min-width: 30em){
+
+                body{
+
+                    background-color: blue; 
+                
+                }
+
+            }
+        </code>
+    </pre>
+
+    <h2>Atalhos</h2>
+
+    <p>
+        Algumas propriedades são abrevições para outras: font, background, padding, border e margin.
+        Elas nos permitem definir vários valores de propriedades em uma única fila.
+    </p>
+
+    <pre>
+        <code>
+            h1{
+
+                padding: 10px 15px 15px 15px;
+
+            }
+
+            /*Faz a mesma coisa de:*/
+
+            h1{
+
+                padding-top: 10px;
+                padding-right: 15px;
+                padding-bottom: 15px;
+                padding-left: 15px;
+
+            }
+
+            
+        </code>
+    </pre>
+
+
+</body>
+</html>
