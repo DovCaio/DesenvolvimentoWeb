@@ -1,0 +1,33 @@
+h1{
+
+    color: hotpink;
+}
+
+header{
+
+    border-bottom: 10px dotted purple; /*Coloca os pontinhos na parte inferior do head, temos valores
+    como dashed solid groove e inset, por padrão é none, então a ordem é o tamanho o formato e a cor*/
+
+}
+
+ul{
+
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding: 10px;
+    padding-left: 30px;
+
+}
+
+.email{
+
+    color: green;
+
+}
+
+a:hover{
+
+    color:green;
+    text-decoration: none;
+
+}

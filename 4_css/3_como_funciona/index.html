@@ -1,0 +1,55 @@
+<h1>Como funciona o css</h1>
+
+<h2>Como o html é renderizado?</h2>
+
+<p>De uma forma simplificada.</p>
+
+<ol>
+
+    <li>
+        O navegador carrega o 
+    </li>
+    <li>
+        Ele converte o html para um DOM. O DOM representa o documento na memória do computador.
+    </li>
+    <li>
+        O navegador requisita a maioria dos recursos que estão lincados no documento, como imagens, vídeos e audios
+    </li>
+    <li>
+        O navegador analiza o css encotrado e interpreta as diferentes regras.
+    </li>
+    <li>
+        A árvore de renderização é organizada na estrutura e deve aparecer depois das regras de estilo
+        serem aplicadas ao documento.
+    </li>
+    <li>
+        O visual de visualização da página é mostrado na tela.
+    </li>
+</ol>
+
+
+<h2>Sobre o DOM</h2>
+
+<p>
+    O DOM é uma estrutura árborea (three-like). Cada elemento, atributo, ou fragmento de texto
+    na linguagem de marcação torna-se um DOM node na estrutura de arvore. Os nodes são definidos
+    por meio do relacionamento com outros nodes presentes. Alguns elementos são pais e outros filhos.
+</p>
+
+<p>Por exemplo:</p>
+
+<pre>
+    <code>
+        <p>
+            Let's use:
+            <span>Cascading</span> <!--O elemento paragrafo e o span não deveriam ser rederizados por isso o certo é ler esse código ao inves da página mb-->
+            <span>Style</span>
+            <span>Sheets</span>
+          </p>
+    </code>
+</pre>
+
+<p>
+    O DOM especifica o elemento p como pai são filhos são o texto e a arvore de nodes que correspondem aos
+    span.
+</p>
