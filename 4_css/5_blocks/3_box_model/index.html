@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Box Model</h1>
+
+        <p>Tudo em css esta dentro de um quadro.</p>
+    </header>
+
+    <main>
+
+        <h2>Caixas block inline</h2>
+
+        <p>
+            Temos dois tipos de caixas: caixas block e inline, isso influencia em como elas irão
+            interagir com o fluxo da página
+        </p>
+
+        <p>Caixas block tem o seguinte comportamento</p>
+
+        <ul>
+
+            <li>A caixa irá quebrar em uma nova linha</li>
+
+            <li>
+                A caixa irá se extender horizontamente (inline) para preencher todo o espaço disponível
+                no container.
+            </li>
+
+            <li>
+                As propriedades width e height serão respeitadas.
+            </li>
+
+            <li>
+                padding, mergin e border farão com que outros elementos sejam empurrados para fora da caixa.
+            </li>
+
+        </ul>
+
+        <p>Se a caixa for do tipo inline, ela seguira os seguintes comportamentos</p>
+
+        <ul>
+            <li>Ela não quebrará uma nova linha.</li>
+            <li>As propriedades width e heigth não serão aplicadas</li>
+            <li>Padding vertical, margens e bordas serão aplicadas, mas não farão com que outras caixas sejam empurradas</li>
+            <li>Padding horizontal, margens e bordas serão aplicadas e farão com que outras caixas embutidas se afastem</li>
+        </ul>
+
+
+
+        <p style="p{display: inline;}">O tipo de caixa é definida pela propriedade display</p>
+
+
+        <h2>Flexbox</h2>
+
+        <p>
+            Serve para a criação de tarefas de layouts de maneira mais fácil
+        </p>
+
+        <p>
+            Para que os elementos fiquem com o layous desejado devemos alterar a propriedade do pai
+            colocando o display como flex, assim todos os itens desse elemento vão estar alinhados
+            horizontalmente.
+        </p>
+
+        <p>
+            Flexbox tem uma propriedade chamada flex-direction que especifica a direção do eixo principal,
+            por padrão é row, que faz que com eles fiquem alinhados horizontalmente.
+        </p>
+
+        <p>
+            Pode acontecer dos elementos ultrapassarem a tela do navegador, para resolver isso temos o 
+            flex-wrap
+        </p>
+
+        <p>
+            Às vezes precisamos que alguns itens dentro do layou tenha um tamanho diferente, 
+            para isso usamos a propriedade flex, para os elementos que queremos que tenha o mesmo
+            tamanho damos o mesmo valor, e quando queremos um maior damos um valor maior.
+        </p>
+
+        <p>
+            Temos uma propriedade chamada aling-items a qual define a forma com que os itens vão se
+            organizar, e junto com ela temos o justify-content que controla onde os elementos ficam
+            ou seja, como se organizam.
+        </p>
+
+        <p>
+            Podemos também alterar a ordem a qual os elementos aparecem com a propriedade order, quando menor
+            o valor do elementos, antes ele vai aparecer, caso elementos tenha a mesma order quem aparecer
+            primeiro no html é quem vai aparecer primeiro também.
+        </p>
+
+        <h2>Partes de uma box</h2>
+
+        <dl>
+            <dt>Content box</dt>
+            <dd>É o conteúdo que é mostrado, pode ser alterado com width e height</dd>
+
+            <dt>Padding box</dt>
+            <dd>É a parte que fica em volta do contúdo, pode ter seu tamanho alterado com padding</dd>
+
+            <dt>Border box</dt>
+            <dd>Fica em volta do Paddgin box, pode ter seu tamanho alterado pelo border</dd>
+
+            <dt>Margin box</dt>
+            <dd>É a última camada, tem seu tamanho alterado por margin</dd>
+        </dl>
+
+        <img src="imagens/caixas.png" alt="É uma ilustração de como funciona as caixas CSS">
+
+        <h2>Margin</h2>
+
+        <p>
+            É uma parte invisivel que serve para separar os elementos, distânciar uns dos outros,
+            o margin normal é um shorthand, temos diferentes propriedades dessa:
+        </p>
+
+        <ul>
+            <li>margin-top</li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-left</li>
+        </ul>
+
+        <p>Podemos atribuir valores negativos também.</p>
+
+        <h2>Border</h2>
+        
+        <p>
+            O border é desenhado entre o padding e a margin, ela serve para fazermos exatamente uma borda.
+        </p>
+
+        <p>Para ajustar o tamanho:</p>
+
+        <ul>
+            <li>border-top</li>
+            <li>border-right</li>
+            <li>border-bottom</li>
+            <li>border-left</li>
+        </ul>
+
+        <p>Também temos largura, estilo e cor:</p>
+
+        <ul>
+            <li>border-direção-width</li>
+            <li>border-direção-style</li>
+            <li>border-direção-color</li>
+        </ul>
+
+        <p>Caso não venhamos a colocar a direção a configuração vai servir para todas.</p>
+
+        <h2>Padding</h2>
+
+        <p>
+            Fica entre a border e o conteúdo do elemento, diferentemente da margin não pode receber
+            valores negativos, o background do elemento sera aplicado no padding também, o elemento
+            fica atras do padding é usado para afastar o conteúdo da borda.
+        </p>
+
+        <p>Temos também:</p>
+
+        <ul>
+            <li>padding-top</li>
+            <li>padding-right</li>
+            <li>padding-bottom</li>
+            <li>padding-left</li>
+        </ul>
+
+        <h2>Inline block e o modelo de caixas</h2>
+
+        <p>
+            Todas as propriedades de caixa são aplicáveis a elementos inline block, porém vai ser 
+            colocado em cima dos outros elementos.
+        </p>
+
+        <p>
+            Ainda assim, podemos usar display inline-block assim o elemento não ficará em cima de nenhum
+            também o width e o height são respeitados nesse display, e as propriedades de caixa vão
+            empurar os outros elementos.
+        </p>
+    </main>
+
+
+
+</body>
+</html>

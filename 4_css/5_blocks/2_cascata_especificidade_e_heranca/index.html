@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Cascata, Especificidade e Herança</h1>
+    </header>
+
+    <main>
+
+        <h2>Cascata</h2>
+
+        <p>
+            Quando duas regras da mesma camada de cascata se aplicam e ambas têm igual especificidade,
+            aquela que foi definida por último é a que será utilizada
+        </p>
+
+        <pre>
+            <code>
+                h1{
+                    color: red;
+                }
+                h1{
+                    color: blue;
+                }
+            </code>
+        </pre>
+
+        <p>O h1 vai assumir o color blue no exemplo acima.</p>
+
+        <h2>Especifidade</h2>
+
+        <p>
+            Se vários blocos de estilo tiverem seletores diferentes que configuram a mesma propriedade
+            com valores diferentes e visam o mesmo elemento, especificidade decide o valor da propriedade
+            que será aplicada ao elemento.
+        </p>
+
+        <ul>
+            <li>
+                Um seletor de elemento tem a menor especificidade, os seletores de pseudoelementos tem 
+                a mesma especificidade.
+            </li>
+
+            <li>
+                Um seletor de classe é mais específico, os seletores de atributo e peseudoclasses tem o 
+                mesmo peso de especificidade.
+            </li>
+        </ul>
+
+        <h2>Herança</h2>
+
+        <p>
+            Alguns valores e propriedades definidas para elementos pais são herdadas pelos seus filhos:
+            color e font-family são herdados pelos elementos filhos, caso não tenha sido definidos diretamente.
+        </p>
+
+    </main>
+
+</body>
+</html>

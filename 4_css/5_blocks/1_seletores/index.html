@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Seletores</h1>
+
+        <p>Seletores são usados para direcionar elementos HTML em nossas páginas da web que queremos ultilizar</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#oque-eh">O que é?</a></li>
+                <li><a href="#listas-selecao">Listas de Seleção</a></li>
+                <li><a href="#tipos-seletores">Tipos de seletores</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h2 id="oque-eh">O que é um seletor?</h2>
+
+        <p>É a primeira parte de uma regra CSS.</p>
+    
+        <pre>
+            <code>
+    
+                h1 {
+    
+    
+                    color: blue;
+    
+                }
+    
+            </code>
+        </pre>
+    
+        <p>O seletor nesse caso é o h1</p>
+    
+        <h2 id="listas-selecao">Listas de seleção</h2>
+    
+        <p>Podemos combinar vários seletores para definirmos uma só regra</p>
+    
+        <pre>
+    
+            <code>
+                h1, .special{
+    
+                    color: blue;
+                }
+            </code>
+    
+        </pre>
+    
+        <p>Assim todas os titulos h1 e os elementos que tem a classe .special vão ser afetados por esssa regra</p>
+    
+        <p>
+            Se um seletor estiver errado todas sua regra será ignorada, por isso caso tenhamos uma lista de
+            seletores e um deles estiver errado a regra vai ser ignorada para os outros seletores, mesmo se
+            eles estiverem corretos. 
+        </p>
+    
+        <h2 id="tipos-seletores">Tipos de Seletores</h2>
+    
+        <h3>Seletores de tipo, classe e id</h3>
+    
+        <p>Tem como alvo um elemento HTML, como h1:</p>
+    
+        <pre>
+            <code>
+                h1{
+    
+                }
+            </code>
+        </pre>
+    
+        <p>Seletores que direcionam uma classe:</p>
+    
+        <pre>
+            <code>
+                .box{
+    
+                }
+            </code>
+        </pre>
+    
+        <p>Seletores que direcionam um id:</p>
+    
+        <pre>
+            <code>
+                #unique{
+    
+                }
+            </code>
+        </pre>
+    
+        <h3>Seletores de atributos</h3>
+    
+        <p>Selecionam elementos com base na presença de determinado atributo.</p>
+    
+        <pre>
+            <code>
+                a[title]{
+    
+                }
+            </code>
+        </pre>
+    
+        <p>Ou até mesmo faça uma seleção com base na presença de um atributo com valor específico:</p>
+    
+        <pre>
+            <code>
+                a[href="https://exemplo.com"]{
+    
+                }
+            </code>
+        </pre>
+    
+        <h3>Pseudo classes e Pseudos-elementos</h3>
+    
+        <p>Seleciona um elemento a depender do seu estado atual.</p>
+    
+        <pre>
+            <code>
+                a:hover{
+    
+                }
+            </code>
+        </pre>
+    
+        <p>
+            Também inclui pseudo-elementos que selecionam uma determinada parte de uma elemento em vez
+            do próprio elemento.
+        </p>
+    
+        <pre>
+            <code>
+                p::first-line{ /*Seleciona a primeira linha de um paragrafo*/
+    
+                }
+            </code>
+        </pre>
+    
+        <h3>Combinadores</h3>
+    
+        <pre>
+            <code>
+                article > p{ /*Seleciona paragrafos que são filhos de article's*/
+    
+                }
+            </code>
+        </pre>
+
+
+
+
+        <h2>Seletores de tipo</h2>
+
+        <p>As vezes é chamado de seletor de nome de tag ou seletor de elemento</p>
+
+        <pre>
+            <code>
+                span {
+                    background-color: yellow;
+                  }
+                  
+                  strong {
+                    color: rebeccapurple;
+                  }
+                  
+                  em {
+                    color: rebeccapurple;
+                  }
+            </code>
+        </pre>
+
+        <h2>Seletor universal</h2>
+
+        <p>
+            Indicado por um astrisco (*). Carrega tudo dentro do documento.
+        </p>
+
+        <p>
+            Exemplo: Vamos retirara todas as margens de todos os elementos.
+        </p>
+
+        <pre>
+            <code>
+                *{
+                    margin: 0;
+                }
+            </code>
+        </pre>
+
+        <h2>Seletor de classe</h2>
+
+        <p>
+            Atribuimos um valor ao atributo class do elemento e assim podemos selecionar atraves dessa
+            notação: .nome-da-classe
+        </p>
+
+        <h3>Segmentação de classes em elementos específicos</h3>
+
+        <p>Podemos criar seletores que tem como alvo elementos específicos com a classe aplicada</p>
+
+        <pre>
+            <code>
+                span.nome-da-classe{
+
+                    background-color: yellow;
+
+                }
+            </code>
+        </pre>
+
+        <h3>Segmentar um elemento que tenha mais de uma classe aplicada </h3>
+
+        <pre>
+            <code>
+                nome-da-primeira-classe.nome-da-segunda-classe{
+
+                    color: blue;
+
+                }
+            </code>
+        </pre>
+
+        <p class="classe1 classse2">
+            Obs: Para darmos diversas classes aos elementos basta separar 
+            cada uma por espaço
+        </p>
+        
+        <h2>Seletores de id</h2>
+
+        <p>
+            Começa com o # em vez de um ponto, mas é usada da mesma forma que o seletor de classe.
+            No entanto, um id so deve ser usado uma vez por página e os elementos só podem ter
+            um id aplicados a eles
+        </p>
+
+        <pre>
+            <code>
+                #nome-id{
+
+                    color: red;
+
+                }
+            </code>
+        </pre>
+    
+    </main>
+    
+    
+
+</body>
+</html>
