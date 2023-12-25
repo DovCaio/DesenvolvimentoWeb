@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background e border</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Background e Border</h1>
+
+    </header>
+
+    <main>
+
+        <div id="background-color">
+
+            <h2>Background color</h2>
+
+            <p>Define a cor de background do elemento</p>
+
+        </div>
+
+        <div id="background-image">
+
+            <h2>Background image</h2>
+
+            <p>
+                Permite que coloquemos uma imagem com background de um elemento
+            </p>
+
+        </div>
+
+        <div id="background-repeat">
+
+            <h2>Controlando o background-repeat</h2>
+
+            <p>
+                O background-repeate nos permite controla o comportamento do background-image
+                os valores posiveis são:
+            </p>
+
+            <dl>
+
+                <dt>no-repeat</dt>
+                <dd>Impede todo o background de se repetir </dd>
+
+                <dt>repeat-x</dt>
+                <dd>Repete horizontalmente</dd>
+
+                <dt>repeat-y</dt>
+                <dd>Repete verticalmente</dd>
+
+                <dt>repeat</dt>
+                <dd>É o valor padrão, repete em ambas as direções</dd>
+
+            </dl>
+
+        </div>
+
+        <div id="sizing-background-image">
+
+            <h2>Ajustando o tamanho do background-image</h2>
+
+            <p>
+                Usamos o background-size, que pode receber valores absolutos e relativos.
+                Também temos dois valores que são cover( cobre completamente o elemento, mantendo
+                a proporção da image, o que pode resultar em uma parte da image sendo cortada) e
+                contain (redimensiona o tamanho da imagen para garantir que ela caiba interamente
+                dentro do elemento sem perder sua proporção).
+            </p>
+
+        </div>
+
+        <div id="positioning-background-image">
+
+            <h2>Posicionando o background-image</h2>
+
+            <p>
+                Para posicionar uma imagen usamos background-posistion, essa propriedade recebe dois 
+                parâmetros, um para o eixo x e outro para o eixo y. Podemos usar tanto valores
+                relativos e absotutos como valores pre-definidos como top, left, right e bottom, porém
+                esses o eixo y so pode receber top e bottom, e o x, left e right, depois de cada valor
+                podemos colocar um valor absoluto ou relativo. 
+            </p>
+
+        </div>
+
+        <div id="gradient-background">
+
+            <h2>Gradient linear</h2>
+
+            <p>
+                O gradient-linear quando usado no background image funciona como sendo justamente uma imagen.
+            </p>
+
+            <p>
+                Temos tanto o linear, radial, repeat-linear, conic. Todos tem um efeito único em relação a
+                como se comportam. 
+            </p>
+
+        </div>
+
+        <div id="multiple-values-in-background-imagen">
+            
+            <h2>Multiplos valores no background-image</h2>
+
+            <p>
+                Podemos colocar multiplas imagens ao background-image e separamos cada uma por virgula,
+                isso também vai funcionar para cada outra propriedade background como a position e o repeat.
+            </p>
+
+        </div>
+
+        <div id="background-attachment">
+
+            <h2>Anexação de background</h2>
+
+            <p>
+                É como a imagem se comporta com forme rolamos a página. Temos diversos valores:
+                scroll (A imagem de plano de fundo rolará junto com a página à medida de que ela descer),
+                fixed (A imagem permanece fixa em relação a janela de visualização), local (A imagem
+                rola junto com o elemento que a contém).
+            </p>
+
+        </div>
+
+        <div id="complementendo-border">
+
+            <h2>Border</h2>
+
+            <p>
+                Além do que já foi visto, também temos border-radius, que deixa a borda arredondada,
+                também funciona para lados individuais, como border-top-radius ou até mesmo border-top-
+                right-radius.
+            </p>
+
+        </div>
+
+
+
+
+        <script src="../scripts/script.js"></script>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

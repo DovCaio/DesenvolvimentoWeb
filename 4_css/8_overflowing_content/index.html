@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow de conteúdo</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    
+
+    <header>
+        <h1>Overflow de conteúdo</h1>
+
+        <p>O overflow quando temos muito conteúdo para pouco espaço</p>
+    </header>
+
+    <main>
+
+        <h2>A propriedade overflow</h2>
+
+        <p>
+            A propriedade overflow gerencia o conteúdo de um elemento. Por padrão o valor é visible
+            que faz com que seja muito fácil de ver que rolou um overflow, podemos colocar o valor hidden,
+            que esconde a parte que ocorreu o overflow, temo também o scroll que faz justamente com que
+            apareça uma barra de rolamento, dessa forma podemos ver o conteúdo econdido.
+        </p>
+
+        <p>
+            Assim, também pode fazer com que o overflow de um determinado eixo tenha um determinado comportamento,
+            usando o overflow-x e o overflow-y.
+        </p>
+
+        <p>
+            Uma outra solução é usar a propriedade word-break, que ao invez de mudar o comportamento da visualização
+            muda o comportamento do texto, assim podemos atribuir o valor break-all que não vai se importar em manter
+            a estrutura das palavras, enquanto o break-word separa as palavras de um jeito melhor.
+        </p>
+
+        <p>
+            Temos também o overflow-wrap que tem um valor break-word que funciona da mesma forma da propriedade anterior.
+        </p>
+
+        <p>
+            Podemos atribuir o valor auto ao overflow, assim o navegador irá descidir a melhor forma de colocar barras de rolamento.
+        </p>
+
+    </main>
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
