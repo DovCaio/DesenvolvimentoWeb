@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    
+    <header>
+
+        <h1>Fundamentos de Texto e Estilização</h1>
+
+    </header>
+
+    <main>
+
+        <h2>Fontes</h2>
+
+        <h3>Color</h3>
+
+        <p>
+            A propreidade color define a cor das letras. Por padrão as cores do texto-decoration seguem
+            a color.
+        </p>
+
+        <h3>Font Families</h3>
+
+        <h4>Fontes Seguras Para Se Usar</h4>
+
+        <table>
+            <tr>
+
+                <th>Nome</th>
+                <th>Generyc Types</th>
+                <th>Notas</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Arial</td>
+                <td>sem serifa</td>
+                <td>
+                    Por muitas vezes é considerado a melhor prática também adiciona Helvetica como uma 
+                    alternativa a Arial, embora sejam muito parecidas, Helvetica é usada para ter um 
+                    boa forma.
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>Corier New</td>
+                <td>mono espaçada</td>
+                <td>
+                    Algumas SO's tem versões alternativas da Courier New font chamada Courier. É 
+                    considerada uma boa prática usar as duas.
+                </td>
+                
+            </tr>
+
+            <tr>
+
+                <td>Georgia</td>
+                
+                <td>Serifada</td>
+                <td></td>
+            </tr>
+
+            <tr>
+
+                <td>Times New Roman</td>
+                <td>Serifada</td>
+                <td>Mesma nota da Corier New(obviamente substituindo por times new roman).</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Trecuchet MS</td>
+                <td>Sem serifa</td>
+                <td>
+                    Devemos ser cuidadosos ao usar essa fonte, ela não está presenta na maioria dos SO's
+                    mobile.
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Verdana</td>
+                <td>Sem serifa</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h4>Fontes Padrões</h4>
+
+        <p>
+            CSS define cinco diferentes nome para fontes: Sem Serifas, Serifadas, Mono-Espaçadas, Cursivas
+            e as Fantasiosas. Elas podem váriar de acordo com o navegador e o Sistema Operacional. 
+        </p>
+
+        <table>
+
+
+            <tr>
+                <th>Termo</th>
+                <th>Definição</th>
+                <th>Exemplo</th>
+            </tr>
+
+            <tr>
+                <td>Serifadas</td>
+                <td>Fontes que tem serifas.</td>
+                <td class="exemplo-fonte" style="font-family: serif;">Eu sou uma fonte Serifada</td>
+            </tr>
+
+            <tr>
+
+                <td>Sem Serifas</td>
+                <td>São fontes que não possuem serifas</td>
+                <td class="exemplo-fonte" style="font-family: sans-serif;"> Eu sou uma fonte Sem Serifa</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Monoespaçadas</td>
+                <td>São fontes em que cada caracter tem o mesmo tamanho</td>
+                <td class="exemplo-fonte" style="font-family: monospace;">Eu sou uma fonte Monoespaçada</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Cursiva</td>
+                <td>São fontes que imitam a escrita humana</td>
+                <td class="exemplo-fonte" style="font-family: cursive;">Eu sou uma fonte Cursiva</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Fantasiosas</td>
+                <td>São fontes feitas para decoração</td>
+                <td class="exemplo-fonte" style="font-family: fantasy;" >Eu sou uma fonte Fantasiosa</td>
+
+            </tr>
+
+        </table>
+
+        <h3>Pilha de Fontes</h3>
+
+        <p>
+            Desde que não possamos garantir que as fontes usadas realmente estejam disponível, podemos
+            dar diferentes opções para que caso uma não esteja diponível, outras podem estar. E no final
+            de todas podemos colocar uma Generica.
+        </p>
+
+        <pre>
+            <code>
+                p {
+                    font-family: "Trebuchet MS", Verdana, sans-serif;
+                }
+            </code>
+        </pre>
+
+        <p>
+            Caso a Trebuchet MS não esteja diponível, a verdana vai entrar em ação, e se a verdana
+            também não estiver diponível a fonte sem serifa disponível vai entrar em ação.
+        </p>
+
+        <h2>Tamanho de Fontes</h2>
+
+        <p>
+            O melhor a se usar são os valores relativos, como em e rm, porém podemos dar também valores
+            de porcentagem ou de pixeis.
+        </p>
+
+        <h2>
+            Font Style, Font Weight, Text Transform e Text Decoration 
+        </h2>
+
+        <h3>font-style</h3>
+
+        <p>Usado para transformar um texto em itálico, raramente é usado.</p>
+
+        <dt>
+
+            <dl>normal</dl>
+            <dd>Coloca o texto na fonte normal</dd>
+
+            <dl>italic</dl>
+            <dd>Transforma o texto na versão italica da fonte, se não tiver então vai simular um obliquo</dd>
+
+            <dl>oblique</dl>
+            <dd>Transforma o texto em uma versão simulada de itálico.</dd>
+
+        </dt>
+
+        <h3>font-weight</h3>
+
+        <p>Seta o quão "forte" é a fonte.</p>
+
+        <dt>
+
+            <dl>normal, bold</dl>
+            <dd>É o valor normal da fonte e o bold</dd>
+
+            <dl>lighter, bolder</dl>
+            <dd>Seta a fonte com a espesura mais leve ou mais grossa, repectivamente</dd>
+
+            <dl>100 - 900</dl>
+            <dd>
+                Seta a espesura de acordo com o valor, quanto maior o valor mais espeça, e quanto menor,
+                menos espeça.
+            </dd>
+
+        </dt>
+
+        <h3>text-transform</h3>
+        
+        <p style="text-transform: full-width;">Transforma a fonte.</p>
+
+        <dt>
+
+            <dl>none</dl>
+            <dd>Não permite qualquer transformação</dd>
+
+            <dl>uppercase</dl>
+            <dd>Transforma todo o texto em caixa alta</dd>
+
+            <dl>lowercase</dl>
+            <dd>Transforma todo o texto em caixa baixa</dd>
+
+            <dl>capitalize</dl>
+            <dd>Transforma todas as letras iniciais de cada palavra em maiuculas</dd>
+
+            <dl>full-width</dl>
+        </dt>
+
+        <h3>text-decoration</h3>
+
+        <p>Seta e desseta a decoração do texto que temos na fonte (vamos usar mais para tirar a linha de baixo dos links</p>
+
+        <dt>
+
+            <dl>none</dl>
+            <dd>Desseta qualquer decoração presente no texto</dd>
+
+            <dl>underline</dl>
+            <dd>Coloca uma linha em baixo do texto</dd>
+
+            <dl>overline</dl>
+            <dd>Coloca uma linha em cima do texto</dd>
+
+            <dl>line-through</dl>
+            <dd>Coloca uma linha em cima do texto</dd>
+
+        </dt>
+
+        <p>
+            Podemos colocar diversas decorações no texto, também podemos colocar a cor dessa 
+        </p>
+
+        <h3 style="text-shadow: 4px 4px 5px red, 2px 2px 1px red;">text-shadow</h3>
+
+        <p>
+            Podemos colocar sobreamento nos textos usando text-shadow. colocas três dimensões e uma cor.
+        </p>
+
+        <p>
+            Também podemos colocar mais de uma sombra, separando com espaços, assim a sobra fica mais forte
+        </p>
+
+        <h3>text-align</h3>
+
+        <p>Controla como o texto é alinhado dentro da sua box.</p>
+
+        <dt>
+
+            <dl>left</dl>
+            <dd>Coloca o texto alinhado na esquerda</dd>
+
+            <dl>rigth</dl>
+            <dd>Coloca o texto alinhado na direita</dd>
+
+            <dl>center</dl>
+            <dd>Cetraliza o texto</dd>
+
+            <dl>justify</dl>
+            <dd>Ajusta o texto dentro do conteiner</dd>
+
+        </dt>
+
+
+        <h2>Espaçamento entre letras e palavras</h2>
+
+        <p>
+            Temos duas propriedades letter-spacing e word-spacing, intuitivamente dá para saber
+            qual faz o que.
+        </p>
+        
+
+    </main>
+
+</body>
+</html>

@@ -9,7 +9,7 @@ console.log(conteudo);
 
 
 //Forma assincrona..
-//a forma assincrona da o arquivo aos poucos, conforme é carregado. Melhor que a forma antiga.
+//a forma assincrona da o arquivo aos poucos, conforme é carregado. Melhor que a forma anterior.
 fs.readFile(caminho, "utf-8", (erro, conteudo) => {
 
     const config = JSON.parse(conteudo);
