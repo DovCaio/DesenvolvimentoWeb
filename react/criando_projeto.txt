@@ -1,0 +1,1 @@
+Para criarmos um projeto com react usamos o comando: npm i -g create-react-app

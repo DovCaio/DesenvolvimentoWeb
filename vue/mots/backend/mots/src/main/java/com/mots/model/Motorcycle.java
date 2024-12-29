@@ -2,11 +2,14 @@ package com.mots.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.mots.enums.Category;
+import com.mots.enums.Currency;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -24,7 +27,7 @@ public class Motorcycle {
 
     @JsonProperty("photo")
     @Column(nullable = false, name = "desc_photo")
-    private Byte[] photo;
+    private byte[] photo;
 
     @JsonProperty("model")
     @Column(nullable = false, name = "desc_model")
@@ -42,16 +45,30 @@ public class Motorcycle {
     @Column(nullable = false, name = "desc_color")
     private String color;
 
-    @JsonProperty("number-cylinders")
+    @JsonProperty("number_cylinders")
     @Column(nullable = false, name = "desc_number_cylinders")
     private Integer numberCylinders;
 
-    @JsonProperty("new")
+    @JsonProperty("currency")
+    @Column(nullable = false, name = "desc_currency")
+    private Currency currency;
+
+    @JsonProperty("new_")
     @Column(nullable = false, name = "desc_new")
     private Boolean new_;
+
+    @JsonProperty("year")
+    @Column(nullable = false, name = "desc_year")
+    private Integer year;
 
     @JsonProperty("milage")
     @Column(nullable = false, name = "desc_milage")
     private Integer milage;
+
+    @JsonProperty("comments")
+    @JoinColumn(name = "comment_tb")
+    @PrimaryKeyJoinColumn(name = "fk_comment")
+    @OneToMany(cascade = CascadeType.ALL)
+    private Set<Comment> comments;
 
 }
